@@ -4,7 +4,7 @@ function Vehicle(x,y){
     this.vel = p5.Vector.random2D();
     this.acc = createVector();
     this.r = 8;
-    this.maxSpeed = 5;
+    this.maxSpeed = 10;
 }
 
 Vehicle.prototype.update=function(){
@@ -14,7 +14,7 @@ Vehicle.prototype.update=function(){
 };
 
 Vehicle.prototype.show=function(){
-    stroke(255);
+    stroke('#FFDE00');
     strokeWeight(10);
     point(this.pos.x,this.pos.y);
 };
